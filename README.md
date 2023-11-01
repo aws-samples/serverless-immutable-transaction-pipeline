@@ -39,12 +39,11 @@ Important: this application uses various AWS services and there are costs associ
     ```
     pip3 install -r requirements.txt
     ```
-6. In `app.py`, update the `deployment_account_id` and `deployment_region` variables on line 24 and 25 with your respective details, then save the file. This is used to build the AWS Step Functions Express Workflow and the Amazon EventBridge event bus rule.
-7. From the command line, use AWS CDK to deploy the AWS resources for the serverless application as specified in the app.py file:
+6. From the command line, use AWS CDK to deploy the AWS resources for the serverless application as specified in the app.py file:
     ```
     cdk deploy MyServerlessApplicationStack
     ```
-8. Note the outputs from the CDK deployment process. These contain the API Gateway Endpoint which is used for testing.
+7. Note the outputs from the CDK deployment process. These contain the API Gateway Endpoint which is used for testing.
 
 ## How it works
 
